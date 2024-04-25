@@ -1,0 +1,38 @@
+/*Color for header and footer*/
+header,
+footer {
+    box-sizing: border-box; 
+    background-color: #3d6d6d;
+    height: 150px;
+    width: 100%;
+}
+
+/*Background color for every page*/
+main {
+    background-color: #6ea08e;
+    flex: 1;
+}
+
+header, footer, body, h1 {
+    display: flex;
+}
+
+h1, h2, p {
+    color: white;
+}
+
+h1 {
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+body {
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0px;
+}
+
+footer, h1 {
+    flex-direction: column;
+    text-align: center;
+}
