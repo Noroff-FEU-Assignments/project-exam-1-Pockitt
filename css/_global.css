@@ -11,18 +11,20 @@ footer {
 main {
     background-color: #6ea08e;
     flex: 1;
+    padding-bottom: 50px;
 }
 
-header, footer, body, h1 {
+header, footer, body, h1, nav {
     display: flex;
 }
 
-h1, h2, p {
+h1, h2, p, a {
     color: white;
 }
 
-h2, p, form {
+h2, p, form, a {
     font-family: "Alata", sans-serif;
+    font-size: 1.5rem;
 }
 
 h1 {
@@ -43,4 +45,13 @@ body {
 footer, h1 {
     flex-direction: column;
     text-align: center;
+}
+
+a {
+    text-decoration: none;
+    font-size: 1.8rem;
+}
+nav {
+    gap: 40px;
+    margin: 0 auto;
 }
