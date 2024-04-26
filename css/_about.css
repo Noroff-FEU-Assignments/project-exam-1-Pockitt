@@ -1,10 +1,17 @@
 
 .about-h1,
-.about-h2 {
+.about-h2,
+.about-p {
     display: flex;
-    text-align: center;
+    flex-direction: column;
+    flex-wrap: wrap;
 }
 
-#about-us-main {
-    
+.about-h2 {
+    text-align: center;
 }
+ .about-p {
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 20px;
+ }

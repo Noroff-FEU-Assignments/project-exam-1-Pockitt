@@ -21,9 +21,17 @@ h1, h2, p {
     color: white;
 }
 
+h2, p, form {
+    font-family: "Alata", sans-serif;
+}
+
 h1 {
     margin: 0 auto;
     margin-top: 50px;
+    font-family: "Milonga", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 4rem;
 }
 
 body {
