@@ -9,22 +9,36 @@ footer {
 
 /*Background color for every page*/
 main {
-    background-color: #6ea08e;
+    background-color: #84b6a4;
     flex: 1;
     padding-bottom: 50px;
 }
 
 header, footer, body, h1, nav {
     display: flex;
+    flex-wrap: wrap;
 }
 
-h1, h2, p, a {
+.logo {
+    font-size: 2.3rem;
+    position: absolute;
+    left: 3%;
+}
+
+h1, h2, p, a, #form-submit-btn {
     color: white;
 }
 
-h2, p, form, a {
+h2, p, form, a, #form-submit-btn, input[type="text"], input[type="email"], textarea {
     font-family: "Alata", sans-serif;
+}
+
+h2 {
     font-size: 1.5rem;
+}
+
+p, form, input[type="text"] input[type="email"], textarea {
+    font-size: 1.1rem;
 }
 
 h1 {
@@ -47,11 +61,23 @@ footer, h1 {
     text-align: center;
 }
 
+footer {
+    justify-content: center;
+}
+
 a {
     text-decoration: none;
-    font-size: 1.8rem;
+    font-size: 2rem;
 }
+
 nav {
-    gap: 40px;
+    gap: 100px;
     margin: 0 auto;
+    align-items: end;
+    margin-bottom: 10px;
+}
+
+a:hover {
+    color: #9acd32;
+    font-size: 220%;
 }
