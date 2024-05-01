@@ -1,8 +1,30 @@
 .other-posts {
     display: flex;
+    flex-direction: column;
 }
 
 .post {
+    display: flex;
     max-height: 650px;
-    
+    max-width: 1500px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0 auto;
+   
+}
+
+.home-page-img-container {
+    display: flex;
+    margin: 10px;
+}
+
+.home-page-img {
+    height: 400px;
+    max-width: 600px;
+    object-fit: center;
+}
+
+.post-title {
+    display: flex;
+    flex-wrap: wrap;
 }
