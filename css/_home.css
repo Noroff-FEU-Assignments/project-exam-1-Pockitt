@@ -1,0 +1,8 @@
+.other-posts {
+    display: flex;
+}
+
+.post {
+    max-height: 650px;
+    
+}
