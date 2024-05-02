@@ -3,7 +3,7 @@ import { getPosts } from "./data/getPosts.js";
 import { posts } from "./data/filterData.js";
 import { renderPost } from "./render/renderPost.js";
 import { renderHome, parentRecentPosts, parentOtherPosts } from "./pages/home.js";
-
+import { renderPostPage } from "./pages/postPage.js";
 
 
 switch(location.pathname) {
@@ -21,7 +21,7 @@ switch(location.pathname) {
           const id = getId();
           const newURL = url + "/" + id;
           const title = await getPosts(newURL);
-          renderPost(title);
+          renderPostPage(title);
   
       } catch(error) {
         alert(`An error has occured. Details: ${error}`);
