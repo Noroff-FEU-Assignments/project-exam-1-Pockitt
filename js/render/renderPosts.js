@@ -1,6 +1,8 @@
 export async function renderPosts(posts, parent, heading) {
-    // parent.innerHTML = "";
-    parent.innerHTML = heading;
+    const homePageRecent = document.querySelector(".recent-posts")
+    const homePageOthers = document.querySelector(".other-posts")
+    parent.innerText = "";
+    parent.innerText = heading;
     for (let i = 0; i < posts.length; i++) {
       parent.innerHTML += ` 
       <div class="post">
