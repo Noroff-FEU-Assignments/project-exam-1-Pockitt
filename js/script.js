@@ -12,7 +12,7 @@ import { renderGalleryPage, galleryPostParent } from "./pages/gallery.js";
 switch(location.pathname) {
     case "../Gallery/index.html":
       try {
-         renderGalleryPage(posts, galleryPostParent, header)
+         renderGalleryPage(getPosts, galleryPostParent, header)
   
       } catch (error) {
         alert(`An error has occured. Details: ${error}`);
