@@ -1,7 +1,7 @@
 import { renderPosts } from "../render/renderPosts.js";
 
-export const parentRecentPosts = document.querySelector("figure");
-export const parentOtherPosts = document.querySelector("section")
+export const parentRecentPosts = document.querySelector(".recent-posts");
+export const parentOtherPosts = document.querySelector(".other-posts")
 
 export function renderHome(posts1, posts2, parent1, parent2) {
 
