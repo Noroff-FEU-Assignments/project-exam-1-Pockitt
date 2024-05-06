@@ -1,6 +1,7 @@
 .other-posts {
-    display: flex;
+    display: block;
     flex-direction: column;
+    width: 100%;
 }
 
 .post {
@@ -9,8 +10,11 @@
     max-width: 1500px;
     flex-direction: row;
     flex-wrap: wrap;
-    margin: 0 auto;
-   
+    margin: 0 auto;  
+}
+
+.post:nth-child(odd) {
+    background-color: #1F7382;
 }
 
 .home-page-img-container {
