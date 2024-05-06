@@ -1,6 +1,6 @@
-export async function renderGallery(posts, parent, heading) {
+export async function renderGallery(posts, parent) {
     parent.innerText = "";
-    parent.innerText = heading;
+    // parent.innerText = heading;
     for (let i = 0; i < posts.length; i++) {
       parent.innerHTML += ` 
       <div class="galleryPost">

@@ -10,9 +10,9 @@ import { renderGalleryPage, galleryPostParent } from "./pages/gallery.js";
 
 
 switch(location.pathname) {
-    case "../Gallery/index.html":
+    case "/Gallery/index.html":
       try {
-         renderGalleryPage(getPosts, galleryPostParent, header)
+         renderGalleryPage (posts, galleryPostParent)
   
       } catch (error) {
         alert(`An error has occured. Details: ${error}`);
@@ -33,7 +33,7 @@ switch(location.pathname) {
       break;
     default:
        try {
-          renderHome(posts, parentRecentPosts, parentOtherPosts);
+          renderHome(posts, posts, parentRecentPosts, parentOtherPosts);
        } catch(error) {
           alert(`An error has occured. Details: ${error}`);
        }

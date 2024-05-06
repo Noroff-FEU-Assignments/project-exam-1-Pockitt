@@ -1,10 +1,8 @@
 export async function renderPosts(posts, parent, heading) {
-    const homePageRecent = document.querySelector(".recent-posts")
-    const homePageOthers = document.querySelector(".other-posts")
     parent.innerHTML = "";
     parent.innerHTML = heading;
     for (let i = 0; i < posts.length; i++) {
-      parent.innerHTML += ` 
+      parent.innerHTML += `
       <div class="post">
         <figure class="home-page-img-container">
           <a href="./Post/index.html?id=${posts[i].id}">
