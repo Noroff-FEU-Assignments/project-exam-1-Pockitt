@@ -1,0 +1,15 @@
+.gallery-posts {
+    max-width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat( auto-fit, minmax(500px, 1fr) );
+}
+
+.gallery-post, .gallery-img {
+    max-width: 400px;
+    max-height: 500px;
+}
+
+.gallery-img {
+
+}
