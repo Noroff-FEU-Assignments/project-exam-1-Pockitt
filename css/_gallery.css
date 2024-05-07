@@ -6,14 +6,15 @@
     grid-template-columns: repeat( auto-fit, minmax(400px, 1fr) );
 }
 
-.gallery-post, .gallery-img {
+.gallery-post {
     
     max-width: 400vh;
     max-height: 500vh;
 }
 
 .gallery-img {
-    object-fit: fill;
+    object-fit: cover;
+    object-position: center;
     width: 100%;
-    height: 100%;
+    height: auto;
 }
