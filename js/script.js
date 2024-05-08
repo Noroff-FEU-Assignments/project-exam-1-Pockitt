@@ -1,10 +1,12 @@
 import { url } from "./data/constant.js";
 import { getPosts } from "./data/getPosts.js";
 import { posts } from "./data/filterData.js";
-import { renderHome, parentRecentPosts, parentOtherPosts } from "./pages/home.js";
+import { renderHome, parentOtherPosts } from "./pages/home.js";
 import { renderPostPage } from "./pages/postPage.js";
 import { getId } from "./data/getID.js";
 import { renderGalleryPage, galleryPostParent } from "./pages/gallery.js";
+import { renderCarouselHome, parentRecentPosts } from "./pages/carouselHome.js";
+import { buttons } from "./data/carouselButtons.js";
 
 
 
@@ -33,7 +35,9 @@ switch(location.pathname) {
       break;
     default:
        try {
-          renderHome(posts, posts, parentRecentPosts, parentOtherPosts);
+          buttons
+          renderCarouselHome(posts, parentRecentPosts);
+          renderHome(posts, parentOtherPosts);
        } catch(error) {
           alert(`An error has occured. Details: ${error}`);
        }

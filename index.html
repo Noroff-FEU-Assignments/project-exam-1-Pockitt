@@ -21,8 +21,16 @@
         </nav>
     </header>
     <main>
-        <section class="recent-posts">...Shh! Content is sprouting.</section>
-        <section class="other-posts">...Shh! Content is sprouting.</section>
+        <section aria-label="Newest posts">
+            <div class="carousel" data-carousel>
+                <button class="carousel-btn-prev" data-carousel-button="prev">&#8604;</button>
+                <button class="carousel-btn-next" data-carousel-button="next">&#8605;</button>
+                <ul class="recent-posts" data-slides>
+
+                </ul>
+            </div>
+        </section>
+        <section aria-label="Other posts" class="other-posts">...Shh! Content is sprouting.</section>
     </main>
     <footer>
         <p>Bottom of the flower pot!</p>
