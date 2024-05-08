@@ -6,8 +6,6 @@ import { renderPostPage } from "./pages/postPage.js";
 import { getId } from "./data/getID.js";
 import { renderGalleryPage, galleryPostParent } from "./pages/gallery.js";
 import { renderCarouselHome, parentRecentPosts } from "./pages/carouselHome.js";
-import { buttons } from "./data/carouselButtons.js";
-
 
 
 switch(location.pathname) {
@@ -31,11 +29,9 @@ switch(location.pathname) {
         alert(`An error has occured. Details: ${error}`);
       }
 
-  
       break;
     default:
        try {
-          buttons
           renderCarouselHome(posts, parentRecentPosts);
           renderHome(posts, parentOtherPosts);
        } catch(error) {

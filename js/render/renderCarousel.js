@@ -12,6 +12,6 @@ export async function renderCarousel(posts, parent, heading) {
           <a href="./Post/index.html?id=${posts[i].id}">
             <h2 class="carousel-post-title">${posts[i].name}</h2>
           </a>
-        </li> `
+        </li>`
     }
   }
