@@ -10,7 +10,7 @@ export async function renderGallery(posts, parent) {
           </a>
         </figure>
         <a href="./Post/index.html?id=${posts[i].id}">
-          <h2 class="post-title">${posts[i].name}</h2>
+          <h2 class="gallery-post-title">${posts[i].name}</h2>
         </a>
       </div> `
     }
