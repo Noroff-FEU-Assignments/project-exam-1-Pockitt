@@ -1,5 +1,5 @@
 .other-posts {
-    display: block;
+    display: flex;
     flex-direction: column;
     width: 100%;
 }
@@ -7,7 +7,7 @@
 .post {
     display: flex;
     max-height: 650px;
-    max-width: 1500px;
+    width: 100%;
     flex-direction: row;
     flex-wrap: wrap;
     margin: 0 auto;  
@@ -20,6 +20,7 @@
 .home-page-img-container {
     display: flex;
     margin: 10px;
+    padding: 0;
 }
 
 .home-page-img {

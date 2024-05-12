@@ -1,6 +1,5 @@
-export async function renderCarousel(posts, parent, heading) {
+export async function renderCarousel(posts, parent) {
     parent.innerHTML = "";
-    parent.innerHTML = heading;
     for (let i = 0; i < posts.length; i++) {
       parent.innerHTML += `
         <li class="carousel-post">

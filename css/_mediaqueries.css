@@ -1,0 +1,19 @@
+@media screen and (width < 800px) {
+    .desktop-nav-menu {
+        display: none;
+    }
+    .ham-menu {
+        display: flex;
+        flex-direction: row;
+    }
+    .home-page-img {
+        height: 100px;
+        width: 300px
+    }
+}
+
+@media screen and (width > 800px) {
+    .ham-menu {
+        display: none;
+    }
+}
