@@ -11,7 +11,7 @@ import { buttons } from "./data/carouselButtons.js";
 
 
 switch(location.pathname) {
-    case "/Gallery/index.html":
+    case "/gallery/":
       try {
          renderGalleryPage (posts, galleryPostParent)
   
@@ -20,7 +20,7 @@ switch(location.pathname) {
       }
       break;
   
-    case "/Post/index.html":
+    case "/post/":
       try {
           const id = getId();
           const newURL = url + "/" + id;
