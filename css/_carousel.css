@@ -14,7 +14,7 @@
 .carousel-post {
     position: absolute;
     inset: 0;
-    opacity: 0;
+    opacity: 1;
     transition: 200ms opacity ease-in-out;
     transition-delay: 200ms;
 }

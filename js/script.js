@@ -34,7 +34,7 @@ switch(location.pathname) {
       break;
     default:
        try {
-          buttons
+          buttons;
           renderCarouselHome(posts, parentRecentPosts);
           renderHome(posts, parentOtherPosts);
        } catch(error) {
